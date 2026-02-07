@@ -34,9 +34,13 @@
 
 </div>
 
+## 📋 Quick Summary
+
+> 🧠 這是一款**神經科學等級的 iOS 腦機介面（BCI）應用程式**，透過藍牙連接 NeuroSky 腦波頭環，以 512Hz 取樣率即時擷取腦電波（EEG）訊號。🔬 核心訊號處理引擎採用 Apple Accelerate vDSP 框架進行**快速傅立葉轉換（FFT）**，將原始腦波拆解為 Delta（深層睡眠）、Theta（冥想放鬆）、Alpha（清醒放鬆）、Beta（專注思考）、Gamma（高階認知）五大頻段。🎨 視覺化渲染完全由**自訂 Metal GPU 著色器**驅動，包含抗鋸齒、漸變色、極簡快速三種渲染路徑，相比 CPU 渲染降低 **76%** 功耗。⚡ 架構採用 MVVM 模式搭配 Swift Concurrency（actor + AsyncStream），確保高頻數據的執行緒安全。💡 內建模擬模式，無需實體硬體即可完整開發測試。適合對 **BCI 研究、數位訊號處理、行動 GPU 運算**有興趣的開發者深入學習。
+
 ---
 
-## Highlights / 技術亮點
+## ✨ Highlights / 技術亮點
 
 | Domain | Detail |
 |--------|--------|
@@ -49,7 +53,7 @@
 
 ---
 
-## Architecture / 系統架構
+## 🏗️ Architecture / 系統架構
 
 ### Signal Processing Pipeline / 訊號處理流程
 
@@ -91,7 +95,7 @@ Raw EEG (512 Hz)
 
 ---
 
-## Project Structure / 專案結構
+## 📁 Project Structure / 專案結構
 
 ```
 brainwave-eeg-interface/
@@ -124,7 +128,7 @@ brainwave-eeg-interface/
 
 ---
 
-## Tech Stack / 技術棧
+## 🛠️ Tech Stack / 技術棧
 
 | Layer | Technology |
 |-------|-----------|
@@ -138,7 +142,7 @@ brainwave-eeg-interface/
 
 ---
 
-## Key Implementation Details / 關鍵實作細節
+## 🔑 Key Implementation Details / 關鍵實作細節
 
 ### EEG Analyzer (`EEGAnalyzer.swift` -- 407 lines)
 
@@ -165,7 +169,7 @@ brainwave-eeg-interface/
 
 ---
 
-## Performance / 效能指標
+## ⚡ Performance / 效能指標
 
 | Metric | Value |
 |--------|-------|
@@ -179,7 +183,7 @@ brainwave-eeg-interface/
 
 ---
 
-## Getting Started / 開始使用
+## 🏁 Getting Started / 開始使用
 
 ### Prerequisites / 前置需求
 
@@ -206,7 +210,7 @@ open Aura.xcodeproj
 
 ---
 
-## Category / 分類
+## 🏷️ Category / 分類
 
 > **Human-Machine Interaction / 人機互動**
 >
