@@ -1,0 +1,10 @@
+- Clean build (Product → Clean Build Folder) and build again.
+
+If you still see errors after adding those files, let me know the exact error messages and file/line, and I’ll fix them immediately.
+
+Missing types checklist before proceeding with more changes:
+##SEARCH: EEGAnalyzer
+##SEARCH: ThinkGearParser
+##SEARCH: DSPEngine
+##SEARCH: FrequencyBand
+##SEARCH: Frames (RawFrame512/PSDFrame/BandPowersFrame/ESenseFrame/FeatureFrame)
