@@ -38,6 +38,10 @@
 
 Brainwave EEG Interface 是一款即時腦機介面（BCI）應用，透過藍牙連接 EEG 裝置擷取腦波訊號並以高效渲染方式視覺化。適合用於研究展示、互動藝術與即時生理訊號監測的原型開發。
 
+## About (EN)
+
+Brainwave EEG Interface is a real-time brain-computer interface app that streams EEG data over Bluetooth and visualizes signals with GPU acceleration. It is designed for research demos, biofeedback experiments, and interactive neuroscience prototypes.
+
 ## 📋 Quick Summary
 
 > 🧠 這是一款**神經科學等級的 iOS 腦機介面（BCI）應用程式**，透過藍牙連接 NeuroSky 腦波頭環，以 512Hz 取樣率即時擷取腦電波（EEG）訊號。🔬 核心訊號處理引擎採用 Apple Accelerate vDSP 框架進行**快速傅立葉轉換（FFT）**，將原始腦波拆解為 Delta（深層睡眠）、Theta（冥想放鬆）、Alpha（清醒放鬆）、Beta（專注思考）、Gamma（高階認知）五大頻段。🎨 視覺化渲染完全由**自訂 Metal GPU 著色器**驅動，包含抗鋸齒、漸變色、極簡快速三種渲染路徑，相比 CPU 渲染降低 **76%** 功耗。⚡ 架構採用 MVVM 模式搭配 Swift Concurrency（actor + AsyncStream），確保高頻數據的執行緒安全。💡 內建模擬模式，無需實體硬體即可完整開發測試。適合對 **BCI 研究、數位訊號處理、行動 GPU 運算**有興趣的開發者深入學習。
